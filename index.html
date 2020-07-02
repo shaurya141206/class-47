@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>C36-Painting Canvas</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5/p5.js"></script>
+    <script src="p5/p5.play.js"></script>
+    <script src="p5/p5.dom.js"></script>
+    <script src="Form.js"></script>
+    <script src="Player.js"></script>
+    <script src="p5/p5.sound.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCb3kwLCVPEsNUn8K6ZVhImvkhPAU2NS0E",
+        authDomain: "data-base-68601.firebaseapp.com",
+        databaseURL: "https://data-base-68601.firebaseio.com",
+        projectId: "data-base-68601",
+        storageBucket: "data-base-68601.appspot.com",
+        messagingSenderId: "160681399154",
+        appId: "1:160681399154:web:a18aef015a6920d07343eb"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+</head>
+
+<body>
+    <script src="sketch.js"></script>
+
+    <div id="canvascontainer"></div>
+    <div>
+        <button id='saveButton'>SAVE IN DATABASE</button>
+        <button id='clearButton'>CLEAR DATABASE</button>
+    </div>
+
+</body>
+
+</html>
